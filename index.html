@@ -31,6 +31,10 @@
 			<div class="container">
 				<h1 class="title">Simpson API</h1>
 
+
+                <button id="button">New quote</button> 
+
+
 				<div class="content" id="chuck-norris"></div>
 			</div>
 		</section>
@@ -64,6 +68,13 @@
     }
 
     fetchQuotesJSON();
+
+    const element = document.getElementById("button");
+    element.addEventListener("click", fetchQuotesJSON);
+
+
         </script>
+           
+           
 	</body>
 </html>
